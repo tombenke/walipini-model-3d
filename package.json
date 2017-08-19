@@ -31,7 +31,7 @@
     "node": "^6.11.2"
   },
   "dependencies": {
-    "three": "^0.86.0",
+    "three": "^0.87.1",
     "three-js-csg": "^72.0.0"
   },
   "devDependencies": {
