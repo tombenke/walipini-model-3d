@@ -1,0 +1,51 @@
+{
+  "name": "walipini-model-3d",
+  "description": "ThreeJS 3D model of walipini",
+  "version": "1.0.0",
+  "keywords": [
+    "web",
+    "ui",
+    "threejs",
+    "3D",
+    "model",
+    "walipini"
+  ],
+  "author": {
+    "name": "Tamás Benke",
+    "email": "tombenke@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/tombenke/walipini-model-3d/issues"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/tombenke/walipini-model-3d/blob/master/LICENSE"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/tombenke/walipini-model-3d.git"
+  },
+  "bin": {},
+  "main": "lib/index.js",
+  "engines": {
+    "node": "^6.11.2"
+  },
+  "dependencies": {
+    "three": "^0.86.0",
+    "three-js-csg": "^72.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "eslint": "^4.4.1",
+    "pre-push": "^0.1.1",
+    "uglify-js": "^3.0.27",
+    "watchify": "^3.6.1"
+  },
+  "scripts": {
+    "lint": "eslint lib/**",
+    "watch": "watchify lib/app.js -o dist/js/bundle.js -v",
+    "browserify": "browserify lib/app.js | uglifyjs > dist/js/bundle.js",
+    "build": "npm run browserify;",
+    "style": "cp -r ../bootstrap/dist/css/* dist/css/; cp -r ../bootstrap/dist/fonts/* dist/fonts/; cp -r ../bootstrap/dist/js/bootstrap* dist/js/; cp node_modules/bootstrap-slider/dist/css/bootstrap-slider.min.css dist/css/"
+  }
+}
