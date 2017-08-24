@@ -10,6 +10,7 @@
         no-unused-vars: ["error", { "args": "none" }],
         comma-spacing: ["error", { "before": false, "after": true }],
         key-spacing: ["error", { "beforeColon": false }],
-        indent: ["error", 4]
+        indent: ["error", 4],
+        "no-console": "off"
     }
 }

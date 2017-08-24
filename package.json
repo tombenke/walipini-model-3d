@@ -17,10 +17,7 @@
   "bugs": {
     "url": "https://github.com/tombenke/walipini-model-3d/issues"
   },
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/tombenke/walipini-model-3d/blob/master/LICENSE"
-  },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "http://github.com/tombenke/walipini-model-3d.git"
