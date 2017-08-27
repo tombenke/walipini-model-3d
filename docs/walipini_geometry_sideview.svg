@@ -1006,11 +1006,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.58082341"
-     inkscape:cx="-262.31637"
-     inkscape:cy="724.18081"
+     inkscape:zoom="1.1616468"
+     inkscape:cx="318.04243"
+     inkscape:cy="663.36746"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer7"
+     inkscape:current-layer="layer6"
      showgrid="false"
      units="mm"
      viewbox-y="40000"
@@ -1439,7 +1439,7 @@
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:100;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 28410.769,44017.479 H 87437.641"
+       d="M 26929.102,46451.638 H 87437.641"
        id="path27199-8"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
@@ -1466,7 +1466,7 @@
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:100;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker6401-0);marker-end:url(#marker27264-7)"
-       d="M 62700.882,44017.479 V 79011.712"
+       d="M 62700.882,46557.479 V 79011.712"
        id="path27254-8"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
@@ -1490,7 +1490,7 @@
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:100.00000763;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker6401-9-0);marker-end:url(#marker27264-6-8)"
-       d="M 85560.799,44017.479 V 103970.54"
+       d="M 85560.799,46345.812 V 103970.54"
        id="path27254-7-0"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
@@ -1532,13 +1532,13 @@
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:100.00003815;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 30086.904,120263.64 V 104071.53"
+       d="M 30086.904,121110.31 V 104071.53"
        id="path27199-83-9-4-9-9-5"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:100.00003815;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M -30019.521,120826.36 V 104634.25"
+       d="M -30019.521,121249.69 V 104634.25"
        id="path27199-83-9-4-9-9-5-9"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
@@ -1562,7 +1562,7 @@
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:100.00001526;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker75807);marker-end:url(#marker76285)"
-       d="M -30156.181,119586.28 H 30086.904"
+       d="M -30156.181,120221.26 H 30086.904"
        id="path27254-9-5-1"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
@@ -1604,22 +1604,22 @@
        sodipodi:nodetypes="cc" />
     <path
        style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:100.00003815;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker27264-65-7-9-7-7-9)"
-       d="M 11806.638,56590.872 10315.801,52203.023"
+       d="m 11191.671,54791.523 -875.87,-2588.5"
        id="path27254-9-5-2-3-1-9"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
        style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:100.00003815;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 11806.638,56590.872 8637.7808,47201.918"
+       d="m 11191.671,54791.523 -2553.8902,-7589.605 -14426.6262,45.553"
        id="path27254-9-5-2-3-1-9-5"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="ccc" />
   </g>
   <g
      inkscape:label="parameters"
      id="g75803"
      inkscape:groupmode="layer"
-     style="display:none"
+     style="display:inline"
      sodipodi:insensitive="true">
     <text
        id="text75705"
@@ -1704,13 +1704,13 @@
          sodipodi:role="line">walipini.door.height</tspan></text>
     <text
        id="text75757"
-       y="60758.43"
-       x="-7015.2627"
+       y="60652.598"
+       x="-7332.7632"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1552.22241211px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:52.91667557px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1552.22241211px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:52.91667557px"
-         y="60758.43"
-         x="-7015.2627"
+         y="60652.598"
+         x="-7332.7632"
          id="tspan75755"
          sodipodi:role="line">walipini.door.width</tspan></text>
     <text
@@ -1759,13 +1759,13 @@
          sodipodi:role="line">ground.underSoil.thickness</tspan></text>
     <text
        id="text75781"
-       y="121306.19"
-       x="-4824.3389"
+       y="119612.85"
+       x="-5459.3398"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1552.22253418px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:52.91667557px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1552.22253418px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:52.91667557px"
-         y="121306.19"
-         x="-4824.3389"
+         y="119612.85"
+         x="-5459.3398"
          id="tspan75779"
          sodipodi:role="line">walipini.width</tspan></text>
     <text
@@ -1782,17 +1782,17 @@
     <text
        id="text75761-3"
        y="46685.32"
-       x="-4721.7681"
+       x="-8320.1064"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1552.22253418px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:52.91667557px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1552.22253418px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:52.91667557px"
          y="46685.32"
-         x="-4721.7681"
+         x="-8320.1064"
          id="tspan75759-3"
          sodipodi:role="line">walipini.roof.beam.height</tspan></text>
   </g>
   <g
-     style="display:inline"
+     style="display:none"
      inkscape:groupmode="layer"
      id="g86203"
      inkscape:label="paraméterek"
@@ -1881,12 +1881,12 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1552.22241211px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:52.91667557px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-7015.2627"
+       x="-5427.7603"
        y="60758.43"
        id="text86181"><tspan
          sodipodi:role="line"
          id="tspan86179"
-         x="-7015.2627"
+         x="-5427.7603"
          y="60758.43"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1552.22241211px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:52.91667557px">ajtó szélesség</tspan></text>
     <text
@@ -1936,13 +1936,13 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1552.22253418px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:52.91667557px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-4824.3389"
-       y="121306.19"
+       x="-6835.1753"
+       y="119718.72"
        id="text86201"><tspan
          sodipodi:role="line"
          id="tspan86199"
-         x="-4824.3389"
-         y="121306.19"
+         x="-6835.1753"
+         y="119718.72"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1552.22253418px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:52.91667557px">walipini szélesség</tspan></text>
     <text
        xml:space="preserve"
@@ -1963,20 +1963,21 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1552.22253418px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:52.91667557px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-21.411301"
-       y="46419.18"
+       x="-5948.0796"
+       y="46630.844"
        id="text86181-8"><tspan
          sodipodi:role="line"
          id="tspan86179-4"
-         x="-21.411301"
-         y="46419.18"
+         x="-5948.0796"
+         y="46630.844"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1552.22253418px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:52.91667557px">gerenda magasság</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer6"
      inkscape:label="key points"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <path
        style="display:inline;opacity:1;fill:#d40000;fill-opacity:1;stroke:none;stroke-width:96.43928528;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path86205"
@@ -2145,14 +2146,14 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1128.88891602px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;fill:#d40000;fill-opacity:1;stroke:none;stroke-width:52.91666412px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="27407.598"
+       x="26666.76"
        y="42873.824"
        id="text86360"><tspan
          sodipodi:role="line"
          id="tspan86358"
-         x="27407.598"
+         x="26666.76"
          y="42873.824"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#d40000;stroke-width:52.91666412px">RTH</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#d40000;stroke-width:52.91666412px">RTOP</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1128.88891602px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;fill:#d40000;fill-opacity:1;stroke:none;stroke-width:52.91667175px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -2379,255 +2380,29 @@
        style="display:inline;opacity:1;fill:#d40000;fill-opacity:1;stroke:none;stroke-width:96.43928528;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path86205-6-4-3"
        sodipodi:type="arc"
-       sodipodi:cx="28896.408"
-       sodipodi:cy="45803.777"
+       sodipodi:cx="-40787.105"
+       sodipodi:cy="67158.719"
        sodipodi:rx="700.00006"
        sodipodi:ry="700.00006"
        sodipodi:start="2.3544769"
        sodipodi:end="2.349824"
-       d="m 28402.284,46299.602 a 700.00006,700.00006 0 0 1 -2.274,-989.371 700.00006,700.00006 0 0 1 989.367,-3.426 700.00006,700.00006 0 0 1 4.577,989.363 700.00006,700.00006 0 0 1 -989.357,5.727 l 491.811,-498.118 z" />
+       d="m -41281.229,67654.543 a 700.00006,700.00006 0 0 1 -2.275,-989.371 700.00006,700.00006 0 0 1 989.368,-3.426 700.00006,700.00006 0 0 1 4.576,989.363 700.00006,700.00006 0 0 1 -989.357,5.728 l 491.812,-498.118 z" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1128.88891602px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;display:inline;fill:#d40000;fill-opacity:1;stroke:none;stroke-width:52.91667175px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="29831.893"
-       y="45965.625"
-       id="text86360-1"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1128.88891602px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;display:inline;fill:#d40000;fill-opacity:1;stroke:none;stroke-width:52.91667557px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="-45939.73"
+       y="66825.305"
+       id="text86360-0-62-0-8"><tspan
          sodipodi:role="line"
-         id="tspan86358-9"
-         x="29831.893"
-         y="45965.625"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#d40000;stroke-width:52.91667175px">RTL</tspan></text>
+         id="tspan86358-6-8-7-4"
+         x="-45939.73"
+         y="66825.305"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#d40000;stroke-width:52.91667557px">BWBT</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer7"
      inkscape:label="key points calc"
-     style="display:inline">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1128.88891602px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;display:inline;fill:#d40000;fill-opacity:1;stroke:none;stroke-width:52.91667557px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-64920.332"
-       y="9766.4443"
-       id="text86360-0-62-0-0-2-7-3"><tspan
-         sodipodi:role="line"
-         id="tspan86358-6-8-7-1-0-1-6"
-         x="-64920.332"
-         y="9766.4443"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#d40000;stroke-width:52.91667557px">O = (0, 0, 0)</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1128.88891602px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;display:inline;fill:#d40000;fill-opacity:1;stroke:none;stroke-width:52.91667557px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-64945.137"
-       y="11728.194"
-       id="text86360-0-62-0-0-2-2-7"><tspan
-         sodipodi:role="line"
-         id="tspan86358-6-8-7-1-0-9-5"
-         x="-64945.137"
-         y="11728.194"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#d40000;stroke-width:52.91667557px">SWLBB = (- walipini.door.width / 2, 0, 0)</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1128.88891602px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;display:inline;fill:#d40000;fill-opacity:1;stroke:none;stroke-width:52.91667557px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-64945.137"
-       y="13726.609"
-       id="text86360-0-62-0-0-2-2-7-3"><tspan
-         sodipodi:role="line"
-         id="tspan86358-6-8-7-1-0-9-5-5"
-         x="-64945.137"
-         y="13726.609"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#d40000;stroke-width:52.91667557px">SWLBF = (walipini.door.width / 2, 0, 0)</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1128.88891602px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;display:inline;fill:#d40000;fill-opacity:1;stroke:none;stroke-width:52.91667557px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-64945.137"
-       y="15720.619"
-       id="text86360-0-62-0-0-2-2-7-3-6"><tspan
-         sodipodi:role="line"
-         id="tspan86358-6-8-7-1-0-9-5-5-2"
-         x="-64945.137"
-         y="15720.619"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#d40000;stroke-width:52.91667557px">SWLDB = (- walipini.door.width / 2, walipini.door.height - walipini.dig.depth, 0)</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1128.88891602px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;display:inline;fill:#d40000;fill-opacity:1;stroke:none;stroke-width:52.91667557px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-64945.137"
-       y="17719.027"
-       id="text86360-0-62-0-0-2-2-7-3-6-9"><tspan
-         sodipodi:role="line"
-         id="tspan86358-6-8-7-1-0-9-5-5-2-1"
-         x="-64945.137"
-         y="17719.027"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#d40000;stroke-width:52.91667557px">SWLDF = (walipini.door.width / 2, walipini.door.height - walipini.dig.depth, 0)</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1128.88891602px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;display:inline;fill:#d40000;fill-opacity:1;stroke:none;stroke-width:52.91667557px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-64897.734"
-       y="19717.434"
-       id="text86360-0-62-0-0-2-2-7-3-6-9-2"><tspan
-         sodipodi:role="line"
-         x="-64897.734"
-         y="19717.434"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#d40000;stroke-width:52.91667557px"
-         id="tspan5328">WPBB = (- walipini.width / 2, - walipini.dig.depth, 0)</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1128.88891602px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;display:inline;fill:#d40000;fill-opacity:1;stroke:none;stroke-width:52.91667557px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-64897.734"
-       y="21715.848"
-       id="text86360-0-62-0-0-2-2-7-3-6-9-2-0"><tspan
-         sodipodi:role="line"
-         x="-64897.734"
-         y="21715.848"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#d40000;stroke-width:52.91667557px"
-         id="tspan5328-9">WPBF = (walipini.width / 2, - walipini.dig.depth, 0)</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1128.88891602px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;display:inline;fill:#d40000;fill-opacity:1;stroke:none;stroke-width:52.91667557px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-64967.738"
-       y="23718.664"
-       id="text86360-0-8-3"><tspan
-         sodipodi:role="line"
-         id="tspan86358-6-6-6"
-         x="-64967.738"
-         y="23718.664"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#d40000;stroke-width:52.91667557px">FWLBI = (walipini.width / 2, 0, 0)</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1128.88891602px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;display:inline;fill:#d40000;fill-opacity:1;stroke:none;stroke-width:52.91667557px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-64967.738"
-       y="25717.064"
-       id="text86360-0-8-3-0"><tspan
-         sodipodi:role="line"
-         id="tspan86358-6-6-6-6"
-         x="-64967.738"
-         y="25717.064"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#d40000;stroke-width:52.91667557px">FWLBE = (walipini.width / 2 + walipini.wall.thickness, 0)</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1128.88891602px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;display:inline;fill:#d40000;fill-opacity:1;stroke:none;stroke-width:52.91667557px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-64967.738"
-       y="27711.064"
-       id="text86360-0-8-3-2"><tspan
-         sodipodi:role="line"
-         id="tspan86358-6-6-6-61"
-         x="-64967.738"
-         y="27711.064"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#d40000;stroke-width:52.91667557px">FWLTI = (walipini.width / 2, max(0, walipini.wall.frontHeight - walipini.wall.thickness * tg(winterSolsticeElevation)), 0)</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1128.88891602px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;display:inline;fill:#d40000;fill-opacity:1;stroke:none;stroke-width:52.91667557px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-64864.109"
-       y="29003.91"
-       id="text86360-0-8-3-8"><tspan
-         sodipodi:role="line"
-         id="tspan86358-6-6-6-7"
-         x="-64864.109"
-         y="29003.91"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#d40000;stroke-width:52.91667557px">FWLTM = (walipini.wall.thickness / 2 - cos(winterSolsticeElevation) * walipini.roof.beam.height,</tspan><tspan
-         sodipodi:role="line"
-         x="-64864.109"
-         y="30415.021"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#d40000;stroke-width:52.91667557px"
-         id="tspan5432">                 max(walipini.wall.frontHeight - sin(winterSolsticeElevation) * walipini.roof.beam.height, 0), 0)</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1128.88891602px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;display:inline;fill:#d40000;fill-opacity:1;stroke:none;stroke-width:52.91667557px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-64967.738"
-       y="31707.859"
-       id="text86360-0-8-3-8-9"><tspan
-         sodipodi:role="line"
-         id="tspan86358-6-6-6-7-2"
-         x="-64967.738"
-         y="31707.859"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#d40000;stroke-width:52.91667557px">FWLTE = (walipini.width / 2 + walipini.wall.thickness, walipini.wall.frontHeight, 0)</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1128.88891602px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;display:inline;fill:#d40000;fill-opacity:1;stroke:none;stroke-width:52.91667557px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-64967.738"
-       y="39705.895"
-       id="text86360-0-62-0-02"><tspan
-         sodipodi:role="line"
-         id="tspan86358-6-8-7-37"
-         x="-64967.738"
-         y="39705.895"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#d40000;stroke-width:52.91667557px">BWLTE =  (- (walipini.width / 2 + walipini.wall.thickness), BWLTI_y - walipini.wall.thickness * ((RTL_y - BWLTI_y) / (RTL_x - BWLTI_x)), 0</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1128.88891602px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;display:inline;fill:#d40000;fill-opacity:1;stroke:none;stroke-width:52.91667557px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-64967.738"
-       y="35704.668"
-       id="text86360-0-62-0-0-5"><tspan
-         sodipodi:role="line"
-         id="tspan86358-6-8-7-1-9"
-         x="-64967.738"
-         y="35704.668"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#d40000;stroke-width:52.91667557px">BWLTI = (- walipini.width / 2, walipini.wall.backHeight, 0)</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1128.88891602px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;display:inline;fill:#d40000;fill-opacity:1;stroke:none;stroke-width:52.91667557px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-64967.738"
-       y="37707.484"
-       id="text86360-0-62-0-01-22"><tspan
-         sodipodi:role="line"
-         id="tspan86358-6-8-7-3-8"
-         x="-64967.738"
-         y="37707.484"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#d40000;stroke-width:52.91667557px">BWLBE = ( - (walipini.width / 2 + walipini.wall.thickness), 0, 0)</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1128.88891602px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;display:inline;fill:#d40000;fill-opacity:1;stroke:none;stroke-width:52.91667557px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-64967.738"
-       y="33710.668"
-       id="text86360-0-62-0-01-7-9"><tspan
-         sodipodi:role="line"
-         id="tspan86358-6-8-7-3-7-7"
-         x="-64967.738"
-         y="33710.668"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#d40000;stroke-width:52.91667557px">BWLBI = (- walipini.width / 2, 0, 0)</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1128.88891602px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;display:inline;fill:#d40000;fill-opacity:1;stroke:none;stroke-width:52.91667175px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-64864.109"
-       y="41206"
-       id="text86360-3"><tspan
-         sodipodi:role="line"
-         id="tspan86358-61"
-         x="-64864.109"
-         y="41206"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#d40000;stroke-width:52.91667175px">RTH = (walipini.width / 2 + walipini.wall.thickness - walipini.roof.topDistance * tg(winterSolsticeElevation),</tspan><tspan
-         sodipodi:role="line"
-         x="-64864.109"
-         y="42617.109"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#d40000;stroke-width:52.91667175px"
-         id="tspan5496">           walipini.dig.depth + walipini.wall.frontHeight + walipini.roof.topDistance, 0)</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1128.88891602px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;display:inline;fill:#d40000;fill-opacity:1;stroke:none;stroke-width:52.91667557px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-64864.109"
-       y="44251.43"
-       id="text86360-03-2"><tspan
-         sodipodi:role="line"
-         id="tspan86358-7-9"
-         x="-64864.109"
-         y="44251.43"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#d40000;stroke-width:52.91667557px">RTL = (RTH_x + walipini.roof.beam.height * sin(winterSolsticeElevation),</tspan><tspan
-         sodipodi:role="line"
-         x="-64864.109"
-         y="45662.539"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#d40000;stroke-width:52.91667557px"
-         id="tspan5531">           RTH_y - walipini.roof.beam.height * cos(winterSolsticeElevation), 0)</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1128.88891602px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;display:inline;fill:#d40000;fill-opacity:1;stroke:none;stroke-width:52.91667557px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-65083.906"
-       y="47878.305"
-       id="text86360-03-4"
-       inkscape:transform-center-x="-1739.3906"
-       inkscape:transform-center-y="-837.48438"><tspan
-         sodipodi:role="line"
-         id="tspan86358-7-7"
-         x="-65083.906"
-         y="47878.305"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#d40000;stroke-width:52.91667557px">SWLRT = TODO</tspan></text>
-  </g>
+     style="display:inline"
+     sodipodi:insensitive="true" />
 </svg>
