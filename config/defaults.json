@@ -1,0 +1,57 @@
+{
+    "winterSolsticeElevation": 18.65,
+    "ground": {
+        "width": 20,
+        "length": 20,
+        "grass": {
+            "thickness": 0.05,
+            "color": "green"
+        },
+        "soil": {
+            "thickness": 0.4,
+            "color": "brown"
+        },
+        "underSoil": {
+            "thickness": 4,
+            "color": "yellow"
+        }
+    },
+    "walipini": {
+        "orientation": 10,
+        "width": 3,
+        "length": 10,
+        "dig": {
+            "depth": 0.75
+        },
+        "wall": {
+            "thickness": 0.5,
+            "frontHeight": 0.75,
+            "backHeight": 1.25,
+            "color": "gray"
+        },
+        "roof": {
+            "topDistance": 1.5,
+            "beam": {
+                "maxDistance": 0.8,
+                "width": 0.05,
+                "height": 0.1
+            },
+            "frontWindow": {
+                "color": "white",
+                "transparent": true,
+                "opacity": 0.4,
+                "castShadow": false
+            },
+            "backWindow": {
+                "color": "brown",
+                "transparent": false,
+                "opacity": 0.4,
+                "castShadow": true
+            }
+        },
+        "door": {
+            "width": 0.8,
+            "height": 1.8
+        }
+    }
+}
