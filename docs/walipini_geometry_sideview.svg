@@ -1006,9 +1006,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.1616468"
-     inkscape:cx="318.04243"
-     inkscape:cy="663.36746"
+     inkscape:zoom="0.2904117"
+     inkscape:cx="-153.99748"
+     inkscape:cy="365.93752"
      inkscape:document-units="mm"
      inkscape:current-layer="layer6"
      showgrid="false"
@@ -1196,7 +1196,7 @@
        style="opacity:1;fill:#ded2d2;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:200.00001526;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
-     style="display:none"
+     style="display:inline"
      transform="translate(0,41913.003)"
      id="g24084"
      inkscape:groupmode="layer"
@@ -1249,7 +1249,7 @@
      inkscape:groupmode="layer"
      id="g24049"
      transform="translate(0,41913.003)"
-     style="display:none"
+     style="display:inline"
      sodipodi:insensitive="true">
     <rect
        y="62057.535"
@@ -1267,7 +1267,7 @@
        style="display:inline;opacity:1;fill:url(#pattern4523);fill-opacity:1;stroke:#aa0000;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
   </g>
   <g
-     style="display:inline"
+     style="display:none"
      transform="translate(0,41913.003)"
      id="g24055"
      inkscape:groupmode="layer"
@@ -1619,7 +1619,7 @@
      inkscape:label="parameters"
      id="g75803"
      inkscape:groupmode="layer"
-     style="display:inline"
+     style="display:none"
      sodipodi:insensitive="true">
     <text
        id="text75705"
@@ -1792,7 +1792,7 @@
          sodipodi:role="line">walipini.roof.beam.height</tspan></text>
   </g>
   <g
-     style="display:none"
+     style="display:inline"
      inkscape:groupmode="layer"
      id="g86203"
      inkscape:label="paraméterek"
@@ -1976,7 +1976,7 @@
      inkscape:groupmode="layer"
      id="layer6"
      inkscape:label="key points"
-     style="display:inline"
+     style="display:none"
      sodipodi:insensitive="true">
     <path
        style="display:inline;opacity:1;fill:#d40000;fill-opacity:1;stroke:none;stroke-width:96.43928528;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"

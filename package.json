@@ -32,16 +32,32 @@
     "three-js-csg": "^72.0.0"
   },
   "devDependencies": {
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babelify": "^7.2.0",
     "browserify": "^14.4.0",
     "eslint": "^4.4.1",
     "pre-push": "^0.1.1",
     "uglify-js": "^3.0.27",
     "watchify": "^3.6.1"
   },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015",
+            "react"
+          ]
+        }
+      ]
+    ]
+  }  ,
   "scripts": {
     "lint": "eslint lib/**",
-    "watch": "watchify lib/app.js -o dist/js/bundle.js -v",
-    "browserify": "browserify lib/app.js | uglifyjs > dist/js/bundle.js",
+    "watch": "watchify lib/index.js -o dist/js/bundle.js -v",
+    "browserify": "browserify lib/index.js | uglifyjs > dist/js/bundle.js",
     "build": "npm run browserify;",
     "style": "cp -r ../bootstrap/dist/css/* dist/css/; cp -r ../bootstrap/dist/fonts/* dist/fonts/; cp -r ../bootstrap/dist/js/bootstrap* dist/js/; cp node_modules/bootstrap-slider/dist/css/bootstrap-slider.min.css dist/css/"
   },
