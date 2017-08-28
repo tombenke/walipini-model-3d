@@ -1,7 +1,7 @@
 {
   "name": "walipini-model-3d",
   "description": "ThreeJS 3D model of walipini",
-  "version": "2.7.0",
+  "version": "2.7.1",
   "keywords": [
     "web",
     "ui",
@@ -53,7 +53,7 @@
         }
       ]
     ]
-  }  ,
+  },
   "scripts": {
     "lint": "eslint lib/**",
     "watch": "watchify lib/index.js -o dist/js/bundle.js -v",
