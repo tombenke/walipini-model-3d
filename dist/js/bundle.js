@@ -52,7 +52,10 @@ module.exports={
         },
         "door": {
             "width": 0.8,
-            "height": 1.8
+            "height": 1.8,
+            "thickness": 0.05,
+            "lintelThickness": 0.12,
+            "color": "brown"
         }
     }
 }
@@ -171,6 +174,76 @@ module.exports={
 }
 
 },{}],4:[function(require,module,exports){
+'use strict';
+
+var THREE = require('three');
+
+var create = function create(options) {
+
+    var doorDist = (options.walipini.length + options.walipini.door.thickness) / 2;
+    var lintelDist = (options.walipini.length + options.walipini.wall.thickness) / 2;
+
+    var result = new THREE.Object3D();
+
+    // Add left and right doors
+    var leftDoor = createDoor(options);
+    var rightDoor = leftDoor.clone(true);
+    leftDoor.translateZ(-doorDist);
+    rightDoor.translateZ(doorDist);
+
+    result.add(leftDoor);
+    result.add(rightDoor);
+
+    // Add doorframe
+    //result.add(createDoorFrame(options))
+
+    // Add lintel
+    var leftLintel = createLintel(options);
+    var rightLintel = leftLintel.clone(true);
+
+    leftLintel.translateZ(-lintelDist);
+    rightLintel.translateZ(lintelDist);
+
+    result.add(leftLintel);
+    result.add(rightLintel);
+
+    result.translateY(options.walipini.door.height / 2 - options.walipini.dig.depth);
+    result.rotateY(THREE.Math.degToRad(-options.walipini.orientation));
+
+    return result;
+};
+
+var createDoor = function createDoor(options) {
+    var door = options.walipini.door;
+    var doorMesh = new THREE.Mesh(new THREE.BoxGeometry(door.width, door.height, door.thickness));
+    doorMesh.receiveShadow = true;
+    doorMesh.castShadow = true;
+    doorMesh.material = new THREE.MeshLambertMaterial({
+        opacity: 0.6,
+        transparent: false,
+        color: door.color
+    });
+    return doorMesh;
+};
+
+var createLintel = function createLintel(options) {
+    var door = options.walipini.door;
+    var lintelMesh = new THREE.Mesh(new THREE.BoxGeometry(door.width + 0.6, door.lintelThickness, options.walipini.wall.thickness + 0.06));
+    lintelMesh.receiveShadow = true;
+    lintelMesh.castShadow = true;
+    lintelMesh.material = new THREE.MeshLambertMaterial({
+        opacity: 0.6,
+        transparent: false,
+        color: door.color
+    });
+    return lintelMesh;
+};
+
+module.exports = {
+    create: create
+};
+
+},{"three":13}],5:[function(require,module,exports){
 'use strict';
 
 var THREE = require('three');
@@ -299,7 +372,7 @@ module.exports = {
 
 };
 
-},{"three":12}],5:[function(require,module,exports){
+},{"three":13}],6:[function(require,module,exports){
 'use strict';
 
 var THREE = require('three');
@@ -382,12 +455,13 @@ module.exports = {
     create: create
 };
 
-},{"./geometry":4,"three":12,"three-js-csg":11}],6:[function(require,module,exports){
+},{"./geometry":5,"three":13,"three-js-csg":12}],7:[function(require,module,exports){
 'use strict';
 
 var THREE = require('three');
 var ground = require('./ground');
 var walls = require('./walls');
+var doors = require('./doors');
 var roof = require('./roof');
 var parameters = require('./parameters');
 var reports = require('./reports');
@@ -399,6 +473,7 @@ var create = function create(rawOptions) {
 
     walipini.add(ground.create(options));
     walipini.add(walls.create(options));
+    walipini.add(doors.create(options));
     walipini.add(roof.create(options));
 
     return walipini;
@@ -415,7 +490,7 @@ module.exports = {
     config: config
 };
 
-},{"../config/":2,"./ground":5,"./parameters":7,"./reports":8,"./roof":9,"./walls":10,"three":12}],7:[function(require,module,exports){
+},{"../config/":2,"./doors":4,"./ground":6,"./parameters":8,"./reports":9,"./roof":10,"./walls":11,"three":13}],8:[function(require,module,exports){
 'use strict';
 
 var THREE = require('three');
@@ -588,7 +663,7 @@ module.exports = {
     update: update
 };
 
-},{"three":12}],8:[function(require,module,exports){
+},{"three":13}],9:[function(require,module,exports){
 'use strict';
 
 var geometry = require('./geometry');
@@ -693,7 +768,7 @@ module.exports = {
     make: make
 };
 
-},{"./geometry":4,"./walls":10}],9:[function(require,module,exports){
+},{"./geometry":5,"./walls":11}],10:[function(require,module,exports){
 'use strict';
 
 var THREE = require('three');
@@ -824,7 +899,7 @@ module.exports = {
     create: create
 };
 
-},{"./geometry":4,"three":12}],10:[function(require,module,exports){
+},{"./geometry":5,"three":13}],11:[function(require,module,exports){
 'use strict';
 
 var THREE = require('three');
@@ -901,7 +976,7 @@ module.exports = {
     createSideWallGeometry: createSideWallGeometry
 };
 
-},{"./geometry":4,"three":12}],11:[function(require,module,exports){
+},{"./geometry":5,"three":13}],12:[function(require,module,exports){
 'use strict';
 	
 	var ThreeBSP,
@@ -1454,7 +1529,7 @@ module.exports = {
     
     return ThreeBSP;
   }
-},{}],12:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
 	typeof define === 'function' && define.amd ? define(['exports'], factory) :
@@ -45695,4 +45770,4 @@ module.exports = {
 
 })));
 
-},{}]},{},[6]);
+},{}]},{},[7]);
