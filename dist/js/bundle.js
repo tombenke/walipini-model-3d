@@ -493,8 +493,8 @@ var createStairwayDig = function createStairwayDig(options) {
     var length = options.walipini.door.width;
 
     var stairwayDigGeometry = extrude(vertices, length);
+    stairwayDigGeometry.translate(0, 0, -length / 2);
     stairwayDigGeometry.rotateY(THREE.Math.degToRad(-options.walipini.orientation - 90));
-    stairwayDigGeometry.translate(length / 2, 0, 0);
 
     return new THREE.Mesh(stairwayDigGeometry);
 };
