@@ -55,6 +55,7 @@ module.exports={
             "height": 1.8,
             "thickness": 0.05,
             "lintelThickness": 0.12,
+            "frameThickness": 0.05,
             "color": "brown"
         }
     }
@@ -177,10 +178,12 @@ module.exports={
 'use strict';
 
 var THREE = require('three');
+var extrude = require('./geometry').extrude;
 
 var create = function create(options) {
 
     var doorDist = (options.walipini.length + options.walipini.door.thickness) / 2;
+    var doorFrameDist = options.walipini.length / 2;
     var lintelDist = (options.walipini.length + options.walipini.wall.thickness) / 2;
 
     var result = new THREE.Object3D();
@@ -195,7 +198,14 @@ var create = function create(options) {
     result.add(rightDoor);
 
     // Add doorframe
-    //result.add(createDoorFrame(options))
+    var leftDoorFrame = createDoorFrame(options);
+    var rightDoorFrame = leftDoorFrame.clone(true);
+
+    leftDoorFrame.translateZ(-doorFrameDist - options.walipini.wall.thickness);
+    rightDoorFrame.translateZ(doorFrameDist);
+
+    result.add(leftDoorFrame);
+    result.add(rightDoorFrame);
 
     // Add lintel
     var leftLintel = createLintel(options);
@@ -207,7 +217,6 @@ var create = function create(options) {
     result.add(leftLintel);
     result.add(rightLintel);
 
-    result.translateY(options.walipini.door.height / 2 - options.walipini.dig.depth);
     result.rotateY(THREE.Math.degToRad(-options.walipini.orientation));
 
     return result;
@@ -216,6 +225,7 @@ var create = function create(options) {
 var createDoor = function createDoor(options) {
     var door = options.walipini.door;
     var doorMesh = new THREE.Mesh(new THREE.BoxGeometry(door.width, door.height, door.thickness));
+    doorMesh.translateY(options.walipini.door.height / 2 - options.walipini.dig.depth);
     doorMesh.receiveShadow = true;
     doorMesh.castShadow = true;
     doorMesh.material = new THREE.MeshLambertMaterial({
@@ -226,9 +236,47 @@ var createDoor = function createDoor(options) {
     return doorMesh;
 };
 
+var createDoorFrame = function createDoorFrame(options) {
+    var door = options.walipini.door;
+    var doorWidth = options.walipini.door.width;
+    var frameThickness = options.walipini.door.frameThickness;
+    var doorTop = options.walipini.door.height - options.walipini.dig.depth;
+    var extDoorBottom = -(options.walipini.dig.depth + frameThickness);
+    var intDoorBottom = -(options.walipini.dig.depth - 0.01);
+    var extDist = doorWidth / 2 + frameThickness;
+    var intDist = doorWidth / 2 - 0.01;
+    var length = options.walipini.wall.thickness + 0.02;
+
+    var LBE = new THREE.Vector2(-extDist, extDoorBottom);
+    var RBE = new THREE.Vector2(extDist, extDoorBottom);
+    var LTE = new THREE.Vector2(-extDist, doorTop);
+    var RTE = new THREE.Vector2(extDist, doorTop);
+    var LBI = new THREE.Vector2(-intDist, intDoorBottom);
+    var RBI = new THREE.Vector2(intDist, intDoorBottom);
+    var LTI = new THREE.Vector2(-intDist, doorTop);
+    var RTI = new THREE.Vector2(intDist, doorTop);
+
+    var vertices = [LBE, RBE, RTE, RTI, RBI, LBI, LTI, LTE, LBE];
+    console.log('doorFrame: ', vertices);
+
+    var doorFrameMesh = new THREE.Mesh(extrude(vertices, length));
+
+    doorFrameMesh.receiveShadow = true;
+    doorFrameMesh.castShadow = true;
+    doorFrameMesh.material = new THREE.MeshLambertMaterial({
+        opacity: 0.6,
+        transparent: false,
+        color: door.color
+    });
+    return doorFrameMesh;
+};
+
 var createLintel = function createLintel(options) {
     var door = options.walipini.door;
-    var lintelMesh = new THREE.Mesh(new THREE.BoxGeometry(door.width + 0.6, door.lintelThickness, options.walipini.wall.thickness + 0.06));
+    var lintelHeight = (options.walipini.door.height + options.walipini.door.lintelThickness) / 2;
+    var lintelMesh = new THREE.Mesh(new THREE.BoxGeometry(door.width + 0.5, door.lintelThickness, options.walipini.wall.thickness + 0.06));
+    lintelMesh.translateY(options.walipini.door.height / 2 - options.walipini.dig.depth);
+    lintelMesh.translateY(lintelHeight);
     lintelMesh.receiveShadow = true;
     lintelMesh.castShadow = true;
     lintelMesh.material = new THREE.MeshLambertMaterial({
@@ -243,7 +291,7 @@ module.exports = {
     create: create
 };
 
-},{"three":13}],5:[function(require,module,exports){
+},{"./geometry":5,"three":13}],5:[function(require,module,exports){
 'use strict';
 
 var THREE = require('three');
