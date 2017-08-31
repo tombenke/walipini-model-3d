@@ -9,11 +9,11 @@
         },
         "soil": {
             "thickness": 0.4,
-            "color": "brown"
+            "color": "saddlebrown"
         },
         "underSoil": {
             "thickness": 4,
-            "color": "yellow"
+            "color": "sandybrown"
         }
     },
     "walipini": {
@@ -27,7 +27,7 @@
             "thickness": 0.5,
             "frontHeight": 0.75,
             "backHeight": 1.25,
-            "color": "gray"
+            "color": "tan"
         },
         "roof": {
             "topDistance": 1.5,
@@ -37,7 +37,7 @@
                 "height": 0.1
             },
             "frontWindow": {
-                "color": "white",
+                "color": "skyblue",
                 "transparent": true,
                 "opacity": 0.4,
                 "castShadow": false

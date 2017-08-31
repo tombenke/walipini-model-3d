@@ -10,11 +10,11 @@ module.exports={
         },
         "soil": {
             "thickness": 0.4,
-            "color": "brown"
+            "color": "saddlebrown"
         },
         "underSoil": {
             "thickness": 4,
-            "color": "yellow"
+            "color": "sandybrown"
         }
     },
     "walipini": {
@@ -28,7 +28,7 @@ module.exports={
             "thickness": 0.5,
             "frontHeight": 0.75,
             "backHeight": 1.25,
-            "color": "gray"
+            "color": "tan"
         },
         "roof": {
             "topDistance": 1.5,
@@ -38,7 +38,7 @@ module.exports={
                 "height": 0.1
             },
             "frontWindow": {
-                "color": "white",
+                "color": "skyblue",
                 "transparent": true,
                 "opacity": 0.4,
                 "castShadow": false
@@ -201,8 +201,8 @@ var create = function create(options) {
     var leftDoorFrame = createDoorFrame(options);
     var rightDoorFrame = leftDoorFrame.clone(true);
 
-    leftDoorFrame.translateZ(-doorFrameDist - options.walipini.wall.thickness);
-    rightDoorFrame.translateZ(doorFrameDist);
+    leftDoorFrame.translateZ(-doorFrameDist - options.walipini.wall.thickness - 0.01);
+    rightDoorFrame.translateZ(doorFrameDist + 0.01);
 
     result.add(leftDoorFrame);
     result.add(rightDoorFrame);
@@ -273,7 +273,7 @@ var createDoorFrame = function createDoorFrame(options) {
 
 var createLintel = function createLintel(options) {
     var door = options.walipini.door;
-    var lintelHeight = (options.walipini.door.height + options.walipini.door.lintelThickness) / 2;
+    var lintelHeight = (options.walipini.door.height + options.walipini.door.lintelThickness) / 2 - 0.005;
     var lintelMesh = new THREE.Mesh(new THREE.BoxGeometry(door.width + 0.5, door.lintelThickness, options.walipini.wall.thickness + 0.06));
     lintelMesh.translateY(options.walipini.door.height / 2 - options.walipini.dig.depth);
     lintelMesh.translateY(lintelHeight);
@@ -282,7 +282,7 @@ var createLintel = function createLintel(options) {
     lintelMesh.material = new THREE.MeshLambertMaterial({
         opacity: 0.6,
         transparent: false,
-        color: door.color
+        color: "sienna"
     });
     return lintelMesh;
 };
@@ -343,81 +343,6 @@ var extrude = function extrude(vertices, height) {
 module.exports = {
     volume: calculateVolume,
     extrude: extrude
-
-    /*
-    function customRound(number, fractiondigits) {
-        with(Math) {
-            return round(number * pow(10, fractiondigits)) / pow(10, fractiondigits);
-        }
-    }
-    
-    function SuperficialAreaOfMesh(points) {
-    
-        var _len = points.length,
-            _area = 0.0;
-    
-        if (!_len) return 0.0;
-    
-        let i = 0
-        let vols = 0
-        let va
-        let vb
-        let vc
-    
-        do  {
-            va = {
-                X: points[i],
-                Y: points[i + 1],
-                Z: points[i + 2]
-            }
-    
-            vb = {
-                X: points[i + 3],
-                Y: points[i + 4],
-                Z: points[i + 5]
-            }
-    
-            vc = {
-                X: points[i + 6],
-                Y: points[i + 7],
-                Z: points[i + 8]
-            }
-    
-            var ab = {
-                X: vb.X - va.X,
-                Y: vb.Y - va.Y,
-                Z: vb.Z - va.Z
-            }
-            //vb.clone().sub(va);  var ac = {X:vc.X-va.X,Y:vc.Y-va.Y,Z:va.Z-vc.Z};
-            //vc.clone().sub(va);   var cross = new THREE.Vector3();
-    
-            cross = crossVectors(ab, ac)
-            _area += Math.sqrt(Math.pow(cross.X, 2) + Math.pow(cross.Y, 2) + Math.pow(cross.Z, 2)) / 2
-            i += 9
-        }
-        while (i < points.length)
-    
-        return customRound(Math.abs(_area) / 100, 2)
-    }
-    
-    function crossVectors( a, b ) {
-        var ax = a.X
-        var ay = a.Y
-        var az = a.Z
-        var bx = b.X
-        var by = b.Y
-        var bz = b.Z
-        var P = {
-            X: ay * bz - az * by,
-            Y: az * bx - ax * bz,
-            Z: ax * by - ay * bx
-        }
-    
-       return P;
-    }
-    
-    */
-
 };
 
 },{"three":13}],6:[function(require,module,exports){
@@ -447,6 +372,9 @@ var create = function create(options) {
     grassVol.position.set(0, -grass.thickness / 2, 0);
     var grassVolBSP = new ThreeBSP(grassVol);
     var grassWithDig = grassVolBSP.subtract(walipiniDigBSP).toMesh();
+
+    //var grassTexture = THREE.ImageUtils.loadTexture("./textures/grass.jpg")
+    //grassWithDig.material =  new THREE.MeshLambertMaterial({ color: grass.color, map: grassTexture })
     grassWithDig.material = new THREE.MeshLambertMaterial({ color: grass.color });
     grassWithDig.receiveShadow = true;
     grassWithDig.castShadow = true;
@@ -903,44 +831,45 @@ var createFullBeam = function createFullBeam(options) {
 
     fullBeam.add(createFrontBeam(options));
     fullBeam.add(createBackBeam(options));
+    fullBeam.translateY(-0.005);
 
     return fullBeam;
-};
-
-var createFrontBeam = function createFrontBeam(options) {
-    var kps = options.walipini.kps;
-    var roof = options.walipini.roof;
-    var beamWidth = roof.beam.width;
-    var vertices = [kps.BWLTE, kps.SWLRT, kps.RTOP, kps.BWBT, kps.BWLTE];
-
-    var frontBeamGeometry = extrude(vertices, beamWidth);
-    var frontBeam = new THREE.Mesh(frontBeamGeometry);
-
-    frontBeam.material = new THREE.MeshLambertMaterial({
-        color: 'brown',
-        transparent: false
-    });
-    frontBeam.castShadow = true;
-
-    return frontBeam;
 };
 
 var createBackBeam = function createBackBeam(options) {
     var kps = options.walipini.kps;
     var roof = options.walipini.roof;
     var beamWidth = roof.beam.width;
-    var vertices = [kps.FWLTM, kps.FWLTE, kps.RTOP, kps.SWLRT, kps.FWLTM];
+    var vertices = [kps.BWLTE, kps.SWLRT, kps.RTOP, kps.BWBT, kps.BWLTE];
 
     var backBeamGeometry = extrude(vertices, beamWidth);
     var backBeam = new THREE.Mesh(backBeamGeometry);
 
     backBeam.material = new THREE.MeshLambertMaterial({
-        color: 'brown',
+        color: 'sienna',
         transparent: false
     });
     backBeam.castShadow = true;
 
     return backBeam;
+};
+
+var createFrontBeam = function createFrontBeam(options) {
+    var kps = options.walipini.kps;
+    var roof = options.walipini.roof;
+    var beamWidth = roof.beam.width;
+    var vertices = [kps.FWLTM, kps.FWLTE, kps.RTOP, kps.SWLRT, kps.FWLTM];
+
+    var frontBeamGeometry = extrude(vertices, beamWidth);
+    var frontBeam = new THREE.Mesh(frontBeamGeometry);
+
+    frontBeam.material = new THREE.MeshLambertMaterial({
+        color: 'sienna',
+        transparent: false
+    });
+    frontBeam.castShadow = true;
+
+    return frontBeam;
 };
 
 module.exports = {
@@ -953,16 +882,15 @@ module.exports = {
 var THREE = require('three');
 var extrude = require('./geometry').extrude;
 
-var createWall = function createWall(geometry, tx, ty, tz) {
+var createWall = function createWall(geometry, tx, ty, tz, color) {
     geometry.translate(tx, ty, tz);
 
-    var wall = new THREE.Mesh(geometry);
-
-    wall.material = new THREE.MeshLambertMaterial({
-        color: wall.color,
+    var wall = new THREE.Mesh(geometry, new THREE.MeshLambertMaterial({
+        color: color,
         transparent: false,
         opacity: 0.6
-    });
+    }));
+
     wall.castShadow = true;
     wall.receiveShadow = true;
     return wall;
@@ -975,10 +903,10 @@ var create = function create(options) {
     var sideWallDistLeft = -length / 2;
     var sideWallDistRight = length / 2 - wallThickness;
 
-    var frontWall = createWall(createFrontWallGeometry(options), 0, 0, -length / 2);
-    var backWall = createWall(createBackWallGeometry(options), 0, 0, -length / 2);
-    var sideWallLeft = createWall(createSideWallGeometry(options), 0, 0, sideWallDistLeft);
-    var sideWallRight = createWall(createSideWallGeometry(options), 0, 0, sideWallDistRight);
+    var frontWall = createWall(createFrontWallGeometry(options), 0, 0, -length / 2, options.walipini.wall.color);
+    var backWall = createWall(createBackWallGeometry(options), 0, 0, -length / 2, options.walipini.wall.color);
+    var sideWallLeft = createWall(createSideWallGeometry(options), 0, 0, sideWallDistLeft, options.walipini.wall.color);
+    var sideWallRight = createWall(createSideWallGeometry(options), 0, 0, sideWallDistRight, options.walipini.wall.color);
 
     var result = new THREE.Object3D();
 
@@ -1012,7 +940,11 @@ var createBackWallGeometry = function createBackWallGeometry(options) {
 var createSideWallGeometry = function createSideWallGeometry(options) {
     var kps = options.walipini.kps;
     var wallThickness = options.walipini.wall.thickness;
-    var vertices = [kps.BWLBE, kps.BWLTE, kps.SWLRT, kps.FWLTM, kps.FWLTE, kps.FWLBE, kps.SWLBF, kps.SWLDF, kps.SWLDB, kps.SWLBB, kps.BWLBE];
+    //const vertices = [
+    //    kps.BWLBE, kps.BWLTE, kps.SWLRT, kps.FWLTM, kps.FWLTE,
+    //    kps.FWLBE, kps.SWLBF, kps.SWLDF, kps.SWLDB, kps.SWLBB, kps.BWLBE
+    //]
+    var vertices = [kps.BWLBE, kps.SWLBB, kps.SWLDB, kps.SWLDF, kps.SWLBF, kps.FWLBE, kps.FWLTE, kps.FWLTM, kps.SWLRT, kps.BWLTE, kps.BWLBE];
 
     return extrude(vertices, wallThickness);
 };
