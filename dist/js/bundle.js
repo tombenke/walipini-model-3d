@@ -238,9 +238,9 @@ var createDoor = function createDoor(options) {
 
 var createDoorFrame = function createDoorFrame(options) {
     var door = options.walipini.door;
-    var doorWidth = options.walipini.door.width;
-    var frameThickness = options.walipini.door.frameThickness;
-    var doorTop = options.walipini.door.height - options.walipini.dig.depth;
+    var doorWidth = door.width;
+    var frameThickness = door.frameThickness;
+    var doorTop = door.height - options.walipini.dig.depth;
     var extDoorBottom = -(options.walipini.dig.depth + frameThickness);
     var intDoorBottom = -(options.walipini.dig.depth - 0.01);
     var extDist = doorWidth / 2 + frameThickness;
@@ -257,7 +257,6 @@ var createDoorFrame = function createDoorFrame(options) {
     var RTI = new THREE.Vector2(intDist, doorTop);
 
     var vertices = [LBE, RBE, RTE, RTI, RBI, LBI, LTI, LTE, LBE];
-    console.log('doorFrame: ', vertices);
 
     var doorFrameMesh = new THREE.Mesh(extrude(vertices, length));
 
@@ -266,7 +265,7 @@ var createDoorFrame = function createDoorFrame(options) {
     doorFrameMesh.material = new THREE.MeshLambertMaterial({
         opacity: 0.6,
         transparent: false,
-        color: door.color
+        color: "sienna"
     });
     return doorFrameMesh;
 };
