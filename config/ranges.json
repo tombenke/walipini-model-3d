@@ -1,21 +1,21 @@
 {
     "winterSolsticeElevation": {
         "min": 0,
-        "max:": 90,
+        "max": 90,
         "step": 1
     },
     "ground": {
         "grass": {
             "thickness": {
                 "min": 0.01,
-                "max:": 0.05,
+                "max": 0.05,
                 "step": 0.01
             }
         },
         "soil": {
             "thickness": {
                 "min": 0,
-                "max:": 1,
+                "max": 1,
                 "step": 0.01 
             }
         }
@@ -23,63 +23,63 @@
     "walipini": {
         "orientation": {
                 "min": 0,
-                "max:": 90,
+                "max": 90,
                 "step": 1
             },
         "width": {
                 "min": 2.5,
-                "max:": 6,
+                "max": 6,
                 "step": 0.1
             },
         "length": {
                 "min": 15,
-                "max:": 3,
+                "max": 3,
                 "step": 0.1
             },
         "dig": {
             "depth": {
                 "min": 0,
-                "max:": 3,
+                "max": 3,
                 "step": 0.1
             }
         },
         "wall": {
             "thickness": {
                 "min": 0.2,
-                "max:": 1,
+                "max": 1,
                 "step": 0.01
             },
             "frontHeight": {
                 "min": 0,
-                "max:": 1.5,
+                "max": 1.5,
                 "step": 0.01
             },
             "backHeight": {
                 "min": 0,
-                "max:": 3,
+                "max": 3,
                 "step": 0.01
             }
         },
         "roof": {
             "topDistance": {
                 "min": 1,
-                "max:": 3,
+                "max": 3,
                 "step": 0.01
             },
             "beam": {
                 "maxDistance": {
                     "min": 0.6,
-                    "max:": 1,
+                    "max": 1,
                     "step": 0.01
                 },
                 "width": {
                     "min": 0.05,
-                    "max:": 0.15,
+                    "max": 0.15,
                     "step": 0.01
                 },
                 "height": {
                     "min": 0.075,
-                    "max:": 0.25,
+                    "max": 0.25,
                     "step": 0.01
                 }
             }
@@ -87,12 +87,12 @@
         "door": {
             "width": {
                 "min": 0.6,
-                "max:": 1.2,
+                "max": 1.2,
                 "step": 0.01
             },
             "height": {
                 "min": 1.5,
-                "max:": 2.5,
+                "max": 2.5,
                 "step": 0.01
             }
         }
