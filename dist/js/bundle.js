@@ -107,8 +107,8 @@ module.exports={
                 "step": 0.1
             },
         "length": {
-                "min": 15,
-                "max": 3,
+                "min": 3,
+                "max": 15,
                 "step": 0.1
             },
         "dig": {
