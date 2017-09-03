@@ -17,7 +17,7 @@
         }
     },
     "walipini": {
-        "orientation": 10,
+        "orientation": 0,
         "width": 3,
         "length": 10,
         "dig": {
