@@ -23,7 +23,7 @@
     "walipini": {
         "orientation": {
                 "min": -90,
-                "max:": 90,
+                "max": 90,
                 "step": 1
             },
         "width": {
